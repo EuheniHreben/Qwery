@@ -62,7 +62,7 @@ img {
 
 header {
   display: flex;
-  padding-top: 60px;
+  padding-top: 40px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 200px;
@@ -177,7 +177,7 @@ h2 {
   margin-right: 14px;
 }
 
-.social {
+.hero .social {
   position: absolute;
   display: flex;
   left: 0;
@@ -185,11 +185,11 @@ h2 {
   transform: rotate(90deg);
 }
 
-.social__text {
-  margin-right: 10px;
+.hero .social__text {
+  margin-right: 20px;
 }
 
-.social__img {
+.hero .social__img {
   margin-right: 10px;
   transform: rotate(-90deg);
 }
@@ -294,7 +294,7 @@ h2 {
 }
 
 footer {
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 
 .row-1 {
@@ -402,4 +402,19 @@ form a::after {
   right: 0;
   position: absolute;
   background: url(ic-keyboard-arrow-right-48px.png) center center no-repeat;
+}
+
+.row-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-3__text {
+  display: flex;
+  gap: 30px;
+}
+
+.row-3 .social {
+  display: flex;
+  gap: 30px;
 }
