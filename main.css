@@ -24,7 +24,10 @@ ul > li {
   min-height: 100%;
   overflow: hidden;
   flex: 1;
+  --posY: 0;
+  min-height: 800px; 
   background: url(./Background.png) top center no-repeat;
+  background-position: 0 var(--posY);
 }
 
 .container {
@@ -57,7 +60,7 @@ img {
 }
 
 .hero {
-  margin-bottom: 500px;
+  margin-bottom: 300px;
 }
 
 header {
@@ -72,6 +75,13 @@ header {
 .logo {
   font-size: 24px;
   font-weight: 700;
+  transition: text-shadow .4s linear;
+  cursor: pointer;
+}
+
+.logo:hover {
+  text-shadow: #FFA343 1px 1px 10px;
+
 }
 
 .menu__list {
@@ -81,9 +91,11 @@ header {
 
 .menu__item {
   margin-right: 50px;
+  transition: color .2s linear;
 }
 
 .menu__item:hover {
+  color: #FFA343;
   text-decoration: underline;
 }
 
@@ -222,6 +234,7 @@ h2 {
 
 .section-1__text {
   margin-bottom: 28px;
+  text-shadow: 1px 1px black;
 }
 
 .button {
@@ -238,12 +251,21 @@ h2 {
   background: url(./arrow_downward_24px.png);
 }
 
+.button_type_first:hover {
+  text-decoration: underline;
+}
+
 .button_type_second {
   padding: 14px 40px;
   background: #FFA343;
   color: #000;
   font-weight: bold;
   border-radius: 8px;
+  transition: box-shadow .2s linear;
+}
+
+.button_type_second:hover {
+  box-shadow: 0 0 20px 0 #FFA343;
 }
 
 .section-2__bg {
@@ -267,6 +289,7 @@ h2 {
 
 .section-2__text {
   margin-bottom: 40px;
+  text-shadow: 1px 1px black;
 }
 
 .section-2 .container {
@@ -291,6 +314,7 @@ h2 {
 
 .section-3__text {
   margin-bottom: 40px;
+  text-shadow: 1px 1px black;
 }
 
 footer {
