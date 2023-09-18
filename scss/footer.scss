@@ -1,0 +1,117 @@
+.footer {
+  margin-bottom: 60px;
+}
+
+.row-1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.row-1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -50px;
+  height: 1px;
+  background: #979797;
+  opacity: .4;
+}
+
+.row-1 .logo {
+  flex: 1;
+}
+
+.row-1__text {
+  padding: 0 50px;
+}
+
+.row-2 {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  @include phones {
+    margin-right: 0px;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;
+  }
+}
+
+.row-2 ul {
+  color: $yellow;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+ul > li {
+  color: #fff;
+  font-weight: normal;
+  line-height: 35px;
+}
+
+.col-1 {
+  width: 35%;
+  @include phones {
+    width: 95%;
+  }
+}
+
+.col-1__text {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+}
+
+form input {
+  outline: none;
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  background: inherit;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+form a {
+  position: relative;
+}
+
+form a::after {
+  content: "";
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: url(../images/ic-keyboard-arrow-right-48px.png) center center no-repeat;
+}
+
+.row-3 {
+  display: flex;
+  justify-content: space-between;
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.row-3__text {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.row-3 .social {
+  display: flex;
+  gap: 30px;
+}

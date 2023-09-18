@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
   <title>QWERy</title>
 </head>
 <body>
@@ -12,7 +15,7 @@
     
     <section class="hero">
       <div class="container">
-        <header>
+        <header class="header">
           <a href="index.html" class="logo">QWERy</a>
           <nav class="menu">
             <ul class="menu__list">
@@ -34,13 +37,13 @@
         <div class="social">
           <div class="social__text">Follow us</div>
           <a href="" class="social__link">
-            <img src="instagram.png" alt="" class="social__img">
+            <img src="images/instagram.png" alt="" class="social__img">
           </a>
           <a href="" class="social__link">
-            <img src="twitter.png" alt="" class="social__img">
+            <img src="images/twitter.png" alt="" class="social__img">
           </a>
           <a href="" class="social__link">
-            <img src="Facebook.png" alt="" class="social__img">
+            <img src="images/Facebook.png" alt="" class="social__img">
           </a>
         </div>
       </div>
@@ -51,26 +54,43 @@
       <section class="section-1" id="section-1">
         <div class="container">
           <div class="section-1__img-box">
-            <img src="image 1.png" alt="" class="section-1__img">
+            <img src="images/image 1.png" alt="" class="section-1__img">
           </div>
           <div class="section-1__desc">
             <div class="section-1__suptitle suptitle">EAST NUSA TENGGARA</div>
             <h2 class="section-1__main-title main-title">Have you enjoyed your holiday?</h2>
             <div class="section-1__text">You will be amazed if you take part in this sailing Komodo island tour package. So it is also mandatory for you, besides enjoying Komodo tourism on Komodo Island, you also have to taste the marine tourism.  The beautiful waters of Komodo will make you meet many travelers from other countries.</div>
-            <a href="" class="section-1__button button button_type_first">read more</a>
+            <a href="#section-2" class="section-1__button button button_type_first">read more</a>
           </div>
         </div>
       </section>
       
       <section class="section-2" id="section-2">
         <div class="container">
-          <div class="section-2__bg">
-            <img src="./image 2.png" alt="section-2__img">
-            <div class="section-2__content">
-              <div class="section-2__suptitle suptitle">BROMO</div>
-              <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
-              <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting Bromo.</div>
-              <a href="" class="section-2__button button button_type_first">read more</a>
+          <div class="slider">
+            <div class="section-2__bg section-2__bg--first">
+              <div class="section-2__content">
+                <div class="section-2__suptitle suptitle">BROMO</div>
+                <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
+                <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting Bromo.</div>
+                <a href="#section-3" class="section-2__button button button_type_first">read more</a>
+              </div>
+            </div>
+            <div class="section-2__bg section-2__bg--second">
+              <div class="section-2__content">
+                <div class="section-2__suptitle suptitle">BROMO</div>
+                <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
+                <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting Bromo.</div>
+                <a href="#section-3" class="section-2__button button button_type_first">read more</a>
+              </div>
+            </div>
+            <div class="section-2__bg section-2__bg--third">
+              <div class="section-2__content">
+                <div class="section-2__suptitle suptitle">BROMO</div>
+                <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
+                <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting Bromo.</div>
+                <a href="#section-3" class="section-2__button button button_type_first">read more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -82,24 +102,24 @@
             <div class="section-3__suptitle suptitle">INDONESIAN CULTURE</div>
             <h2 class="section-3__main-title main-title">Our culture here is very friendly to people</h2>
             <div class="section-3__text">known for his politeness, manners and gentleness. This becomes a characteristic when they mingle with other tribes and become basic traits that are passed down by their ancestors.</div>
-            <a href="" class="section-3__button button button_type_first">read more</a>
+            <a href="#row-2" class="section-3__button button button_type_first">read more</a>
           </div>
           <div class="section-3__img-box">
-            <img src="01.png" alt="" class="section-3__img">
+            <img src="images/01.png" alt="" class="section-3__img">
           </div>
         </div>
       </section>
       
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="row-1">
           <div class="logo">QWERy</div>
           <div class="row-1__text">Ready to explore?</div>
           <a href="#section-1" class="row-1__button button button_type_second">Get started</a>
         </div>
-        <div class="row-2">
+        <div class="row-2" id="row-2">
           <div class="col-1">
             <div class="col-1__text">Let's go on vacation, Make your day</div>
             <form>
@@ -137,18 +157,20 @@
           </div>
           <div class="social">
             <a href="" class="social__link">
-              <img src="instagram.png" alt="" class="social__img">
+              <img src="images/instagram.png" alt="" class="social__img">
             </a>
             <a href="" class="social__link">
-              <img src="twitter.png" alt="" class="social__img">
+              <img src="images/twitter.png" alt="" class="social__img">
             </a>
             <a href="" class="social__link">
-              <img src="Facebook.png" alt="" class="social__img">
+              <img src="images/Facebook.png" alt="" class="social__img">
             </a>
           </div>
         </div>
       </div>
     </footer>
+
+    <div class="btn-up btn-up_hide"></div>
 
     <script src="script.js"></script>
     

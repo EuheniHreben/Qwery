@@ -1,0 +1,84 @@
+body, html {
+  height:100%;
+  width:100%;
+  color: #fff;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: #000;
+  scroll-behavior: smooth;
+}
+
+//variables
+$yellow: #FFC178;
+$containerWidth: 1920px;
+$phones: 480px;
+
+@mixin phones {
+  @media (max-width: $phones) {
+    @content;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  flex: 1;
+  --posY: 0;
+  min-height: 800px; 
+  background: url(../images/Background-mini.png) top center no-repeat;
+  background-position: 0 var(--posY);
+}
+
+.container {
+  width: 80%;
+  max-width: $containerWidth;
+  margin: 0 auto;
+  @include phones() {
+    width: 95%;
+  }
+}
+
+ul > li {
+  list-style: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bx-wrapper {
+  border: transparent;
+  box-shadow: none;
+}
+
+@import 'hero.scss';
+@import 'section-1.scss';
+@import 'section-2.scss';
+@import 'section-3.scss';
+@import 'footer.scss';
+@import 'btn-up.scss';
