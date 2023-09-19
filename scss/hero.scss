@@ -15,6 +15,7 @@ header {
   align-items: center;
   margin-bottom: 200px;
   position: relative;
+
   @include phones() {
     margin-bottom: 80px;
     flex-direction: column;
@@ -26,6 +27,7 @@ header {
   font-weight: 700;
   transition: text-shadow .4s linear;
   cursor: pointer;
+
   @include phones {
     font-size: 44px;
     margin-bottom: 20px;
@@ -47,6 +49,7 @@ header {
   display: flex;
   margin-right: 50px;
   transition: color .2s linear;
+
   @include phones() {
     margin-right: 0px;
   }
@@ -60,6 +63,7 @@ header {
 h1 {
   font-size: 96px;
   font-weight: 700;
+
   @include phones {
     font-size: 66px;
   }
@@ -75,6 +79,7 @@ h2 {
   align-items: center;
   justify-content: center;
   transform: translateX(100px);
+
   @include phones() {
     transform: translateX(0px);
   }
@@ -96,6 +101,7 @@ h2 {
   font-size: 88px;
   font-weight: 100;
   margin-bottom: 125px;
+
   @include phones() {
     font-size: 68px;
     margin-bottom: 80px;
@@ -115,6 +121,7 @@ h2 {
 
 .title__container a {
   transform: translateX(-100px);
+
   @include phones {
     transform: translateX(0px);
   }
@@ -130,9 +137,9 @@ h1 {
   text-transform: uppercase;
 }
 
-.title__suptitle::before, 
-.section-1__suptitle::before, 
-.section-2__suptitle::before, 
+.title__suptitle::before,
+.section-1__suptitle::before,
+.section-2__suptitle::before,
 .section-2__suptitle::after,
 .section-3__suptitle::before {
   content: "";
@@ -153,19 +160,20 @@ h1 {
 .search {
   opacity: .4;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    background: url(../images/cart.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px;
+  }
+  
   @include phones {
     display: none;
   }
-}
-
-.search::before {
-  content: "";
-  background: url(../images/cart.png);
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 14px;
 }
 
 .hero .social {
@@ -174,6 +182,7 @@ h1 {
   left: 0;
   top: 50%;
   transform: rotate(90deg);
+
   @include phones() {
     display: none;
   }
@@ -195,6 +204,13 @@ h1 {
 }
 
 @keyframes blink {
-  0% { opacity: 0; filter: blur(6px); }
-  100% { opacity: 1; filter: blur(0px); }
+  0% {
+    opacity: 0;
+    filter: blur(6px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
 }

@@ -7,6 +7,10 @@
   justify-content: flex-end;
   align-items: center;
   position: relative;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .row-1::before {
@@ -34,6 +38,7 @@
   justify-content: space-between;
   margin-right: 100px;
   margin-bottom: 100px;
+
   @include phones {
     margin-right: 0px;
     flex-direction: column;
@@ -48,7 +53,7 @@
   padding-top: 20px;
 }
 
-ul > li {
+ul>li {
   color: #fff;
   font-weight: normal;
   line-height: 35px;
@@ -56,6 +61,7 @@ ul > li {
 
 .col-1 {
   width: 35%;
+
   @include phones {
     width: 95%;
   }
@@ -100,6 +106,7 @@ form a::after {
 .row-3 {
   display: flex;
   justify-content: space-between;
+
   @include phones {
     flex-direction: column;
   }
