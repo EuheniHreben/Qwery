@@ -19,7 +19,6 @@ html {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
-  flex: 1;
   min-height: 800px;
   background: url(../images/Background-mini.png) top center no-repeat;
   --posY: 0;
@@ -392,7 +391,7 @@ h1 {
   flex: 1; }
 
 .row-1__text {
-  padding: 0 50px; }
+  padding: 20px 50px; }
 
 .row-2 {
   padding-top: 100px;
@@ -454,6 +453,9 @@ form a::after {
   position: absolute;
   background: url(../images/ic-keyboard-arrow-right-48px.png) center center no-repeat; }
 
+.col-2 {
+  margin-top: 40px; }
+
 .row-3 {
   display: flex;
   justify-content: space-between; }
@@ -465,10 +467,17 @@ form a::after {
   display: flex;
   gap: 30px;
   margin-bottom: 20px; }
+  @media (max-width: 480px) {
+    .row-3__text {
+      justify-content: space-between;
+      gap: 0; } }
 
 .row-3 .social {
   display: flex;
   gap: 30px; }
+  @media (max-width: 480px) {
+    .row-3 .social {
+      justify-content: center; } }
 
 .btn-up {
   position: fixed;

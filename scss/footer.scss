@@ -29,7 +29,7 @@
 }
 
 .row-1__text {
-  padding: 0 50px;
+  padding: 20px 50px;
 }
 
 .row-2 {
@@ -103,6 +103,10 @@ form a::after {
   background: url(../images/ic-keyboard-arrow-right-48px.png) center center no-repeat;
 }
 
+.col-2 {
+  margin-top: 40px;
+}
+
 .row-3 {
   display: flex;
   justify-content: space-between;
@@ -116,9 +120,18 @@ form a::after {
   display: flex;
   gap: 30px;
   margin-bottom: 20px;
+
+  @include phones {
+    justify-content: space-between;
+    gap: 0;
+  }
 }
 
 .row-3 .social {
   display: flex;
   gap: 30px;
+
+  @include phones {
+    justify-content: center;
+  }
 }
