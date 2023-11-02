@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/main.css">
   <title>QWERy</title>
 </head>
 
 <body>
-  <div class="wrapper">
 
+  <img class="thumbnail" src="../images/Background-mini.png" alt="image">
+  <div class="wrapper">
+    
     <section class="hero">
       <div class="container">
         <header class="header">
@@ -72,40 +72,45 @@
 
       <section class="section-2" id="section-2">
         <div class="container">
-          <div class="slider">
-            <div class="section-2__bg section-2__bg--first">
-              <div class="section-2__content">
-                <div class="section-2__suptitle suptitle">BROMO</div>
-                <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
-                <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor
-                  of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or
-                  otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting
-                  Bromo.</div>
-                <a href="#section-3" class="section-2__button button button_type_first">read more</a>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide section-2__bg section-2__bg--first">
+                <div class="section-2__content">
+                  <div class="section-2__suptitle suptitle">BROMO</div>
+                  <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
+                  <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor
+                    of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or
+                    otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting
+                    Bromo.</div>
+                  <a href="#section-3" class="section-2__button button button_type_second">read more</a>
+                </div>
+              </div>
+              <div class="swiper-slide section-2__bg section-2__bg--second">
+                <div class="section-2__content">
+                  <div class="section-2__suptitle suptitle">BROMO</div>
+                  <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
+                  <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor
+                    of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or
+                    otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting
+                    Bromo.</div>
+                  <a href="#section-3" class="section-2__button button button_type_second">read more</a>
+                </div>
+              </div>
+              <div class="swiper-slide section-2__bg section-2__bg--third">
+                <div class="section-2__content">
+                  <div class="section-2__suptitle suptitle">BROMO</div>
+                  <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
+                  <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor
+                    of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or
+                    otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting
+                    Bromo.</div>
+                  <a href="#section-3" class="section-2__button button button_type_second">read more</a>
+                </div>
               </div>
             </div>
-            <div class="section-2__bg section-2__bg--second">
-              <div class="section-2__content">
-                <div class="section-2__suptitle suptitle">BROMO</div>
-                <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
-                <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor
-                  of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or
-                  otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting
-                  Bromo.</div>
-                <a href="#section-3" class="section-2__button button button_type_first">read more</a>
-              </div>
-            </div>
-            <div class="section-2__bg section-2__bg--third">
-              <div class="section-2__content">
-                <div class="section-2__suptitle suptitle">BROMO</div>
-                <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
-                <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor
-                  of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or
-                  otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting
-                  Bromo.</div>
-                <a href="#section-3" class="section-2__button button button_type_first">read more</a>
-              </div>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
           </div>
         </div>
       </section>
@@ -124,6 +129,8 @@
           </div>
         </div>
       </section>
+
+      
 
     </main>
 
@@ -186,11 +193,15 @@
     </footer>
 
   </div>
-    
+  
   <div class="btn-up btn-up_hide"></div>
-    
-  <script src="script.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/btn-up.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/simple-parallax.js"></script>
+  
 </body>
 
 </html>
