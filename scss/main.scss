@@ -36,10 +36,6 @@ $phones: 480px;
   bottom: 0;
 }
 
-.thumbnail {
-  width: 90%;
-}
-
 .container {
   width: 80%;
   max-width: $containerWidth;
@@ -74,9 +70,32 @@ img {
   max-width: 100%;
 }
 
+.thumbnail {
+  width: 90%;
+  @include phones() {
+    height: 140vh;
+    width: 180%;
+    max-width: 180%;
+  }
+}
+
+.thumbnail img {
+  @include phones() {
+    max-width: 180%;
+  }
+}
+
 .swiper {
   max-width: 1200px;
   height: 100vh;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: rgba(255, 193, 120, 0.5);
+    right: 10px;
+    padding: 30px;
+    color: white;
 }
 
 @import 'hero.scss';

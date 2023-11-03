@@ -13,7 +13,7 @@ header {
   padding-top: 40px;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 180px;
   position: relative;
 
   @include phones() {
@@ -63,6 +63,8 @@ header {
 h1 {
   font-size: 96px;
   font-weight: 700;
+  opacity: 0;
+  animation: blink 2s forwards;
 
   @include phones {
     font-size: 66px;
@@ -71,7 +73,6 @@ h1 {
 
 h2 {
   font-size: 64px;
-
 }
 
 .title {
@@ -85,12 +86,6 @@ h2 {
   }
 }
 
-.title__title {
-  opacity: 0;
-  animation: blink 2s forwards;
-  animation-delay: 2s;
-}
-
 .title__container {
   width: 90%;
   display: flex;
@@ -101,6 +96,10 @@ h2 {
   font-size: 88px;
   font-weight: 100;
   margin-bottom: 125px;
+  opacity: 0;
+  animation: blink 2s forwards;
+  animation-delay: 2s;
+
 
   @include phones() {
     font-size: 68px;
@@ -125,11 +124,6 @@ h2 {
   @include phones {
     transform: translateX(0px);
   }
-}
-
-h1 {
-  opacity: 0;
-  animation: blink 2s forwards;
 }
 
 .suptitle {
@@ -160,7 +154,17 @@ h1 {
 .search {
   opacity: .4;
   cursor: pointer;
-
+  & input {
+    border: transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    background-color: transparent;
+    &::placeholder {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
   &::before {
     content: "";
     background: url(../images/cart.png);
@@ -168,11 +172,29 @@ h1 {
     height: 20px;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 14px;
+    margin-right: 10px;
   }
   
   @include phones {
     display: none;
+  }
+}
+
+#scrollButton {
+  opacity: 0;
+  animation: blink 4s forwards;
+  animation-delay: 3s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+    filter: blur(6px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px);
   }
 }
 
@@ -195,22 +217,4 @@ h1 {
 .hero .social__img {
   margin-right: 10px;
   transform: rotate(-90deg);
-}
-
-#scrollButton {
-  opacity: 0;
-  animation: blink 4s forwards;
-  animation-delay: 3s;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-    filter: blur(6px);
-  }
-
-  100% {
-    opacity: 1;
-    filter: blur(0px);
-  }
 }

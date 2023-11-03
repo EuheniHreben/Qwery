@@ -11,7 +11,11 @@
   justify-content: center;
   width: 60px;
   height: 50px;
+  opacity: 1;
+  filter: blur(0px);
   transition: box-shadow .4s linear;
+  transition: opacity .4s linear;
+  transition: filter(blur) .8s linear;
 }
 
 .btn-up::before {
@@ -24,7 +28,8 @@
 }
 
 .btn-up_hide {
-  display: none;
+  opacity: 0;
+  filter: blur(4px);
 }
 
 @media (hover: hover) and (pointer: fine) {

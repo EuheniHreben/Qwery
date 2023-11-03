@@ -21,9 +21,6 @@ html {
   right: 0;
   bottom: 0; }
 
-.thumbnail {
-  width: 90%; }
-
 .container {
   width: 80%;
   max-width: 1920px;
@@ -51,9 +48,28 @@ a {
 img {
   max-width: 100%; }
 
+.thumbnail {
+  width: 90%; }
+  @media (max-width: 480px) {
+    .thumbnail {
+      height: 140vh;
+      width: 180%;
+      max-width: 180%; } }
+
+@media (max-width: 480px) {
+  .thumbnail img {
+    max-width: 180%; } }
+
 .swiper {
   max-width: 1200px;
   height: 100vh; }
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(255, 193, 120, 0.5);
+  right: 10px;
+  padding: 30px;
+  color: white; }
 
 .hero {
   margin-bottom: 200px; }
@@ -68,7 +84,7 @@ header {
   padding-top: 40px;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 180px;
   position: relative; }
   @media (max-width: 480px) {
     header {
@@ -107,7 +123,9 @@ header {
 
 h1 {
   font-size: 96px;
-  font-weight: 700; }
+  font-weight: 700;
+  opacity: 0;
+  animation: blink 2s forwards; }
   @media (max-width: 480px) {
     h1 {
       font-size: 66px; } }
@@ -124,11 +142,6 @@ h2 {
     .title {
       transform: translateX(0px); } }
 
-.title__title {
-  opacity: 0;
-  animation: blink 2s forwards;
-  animation-delay: 2s; }
-
 .title__container {
   width: 90%;
   display: flex;
@@ -137,7 +150,10 @@ h2 {
 .title__title {
   font-size: 88px;
   font-weight: 100;
-  margin-bottom: 125px; }
+  margin-bottom: 125px;
+  opacity: 0;
+  animation: blink 2s forwards;
+  animation-delay: 2s; }
   @media (max-width: 480px) {
     .title__title {
       font-size: 68px;
@@ -158,10 +174,6 @@ h2 {
   @media (max-width: 480px) {
     .title__container a {
       transform: translateX(0px); } }
-
-h1 {
-  opacity: 0;
-  animation: blink 2s forwards; }
 
 .suptitle {
   color: #FFC178;
@@ -188,6 +200,15 @@ h1 {
 .search {
   opacity: .4;
   cursor: pointer; }
+  .search input {
+    border: transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    background-color: transparent; }
+    .search input::placeholder {
+      color: #fff;
+      font-size: 16px; }
   .search::before {
     content: "";
     background: url(../images/cart.png);
@@ -195,11 +216,23 @@ h1 {
     height: 20px;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 14px; }
+    margin-right: 10px; }
   @media (max-width: 480px) {
     .search {
       display: none; } }
 
+#scrollButton {
+  opacity: 0;
+  animation: blink 4s forwards;
+  animation-delay: 3s; }
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+    filter: blur(6px); }
+  100% {
+    opacity: 1;
+    filter: blur(0px); } }
 .hero .social {
   position: absolute;
   display: flex;
@@ -217,18 +250,6 @@ h1 {
   margin-right: 10px;
   transform: rotate(-90deg); }
 
-#scrollButton {
-  opacity: 0;
-  animation: blink 4s forwards;
-  animation-delay: 3s; }
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-    filter: blur(6px); }
-  100% {
-    opacity: 1;
-    filter: blur(0px); } }
 .section-1 .container {
   display: flex;
   justify-content: space-between;
@@ -492,7 +513,11 @@ form a::after {
   justify-content: center;
   width: 60px;
   height: 50px;
-  transition: box-shadow .4s linear; }
+  opacity: 1;
+  filter: blur(0px);
+  transition: box-shadow .4s linear;
+  transition: opacity .4s linear;
+  transition: filter(blur) 0.8s linear; }
 
 .btn-up::before {
   content: "";
@@ -503,7 +528,8 @@ form a::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E"); }
 
 .btn-up_hide {
-  display: none; }
+  opacity: 0;
+  filter: blur(4px); }
 
 @media (hover: hover) and (pointer: fine) {
   .btn-up:hover {
