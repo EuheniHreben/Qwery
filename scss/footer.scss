@@ -104,7 +104,9 @@ form a::after {
 }
 
 .col-2 {
-  margin-top: 40px;
+  @include phones {
+    margin-top: 40px;
+  }
 }
 
 .row-3 {

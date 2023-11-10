@@ -53,8 +53,8 @@ img {
   @media (max-width: 480px) {
     .thumbnail {
       height: 140vh;
-      width: 180%;
-      max-width: 180%; } }
+      width: 220%;
+      max-width: 220%; } }
 
 @media (max-width: 480px) {
   .thumbnail img {
@@ -474,8 +474,9 @@ form a::after {
   position: absolute;
   background: url(../images/ic-keyboard-arrow-right-48px.png) center center no-repeat; }
 
-.col-2 {
-  margin-top: 40px; }
+@media (max-width: 480px) {
+  .col-2 {
+    margin-top: 40px; } }
 
 .row-3 {
   display: flex;
