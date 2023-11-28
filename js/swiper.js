@@ -12,5 +12,5 @@ const swiper = new Swiper('.swiper', {
   },
   // effect: 'flip',
   // effect: 'fade',
-  effect: 'cube',
+  // effect: 'cube',
 });

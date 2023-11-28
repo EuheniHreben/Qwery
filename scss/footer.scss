@@ -103,6 +103,13 @@ form a::after {
   background: url(../images/ic-keyboard-arrow-right-48px.png) center center no-repeat;
 }
 
+footer ul {
+  font-size: 22px;
+  &>li {
+    font-size: 14px;
+  }
+}
+
 .col-2 {
   @include phones {
     margin-top: 40px;

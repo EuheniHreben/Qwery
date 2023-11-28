@@ -220,10 +220,12 @@ h2 {
   @media (max-width: 480px) {
     .search {
       display: none; } }
+  .search input {
+    width: 120px; }
 
 #scrollButton {
   opacity: 0;
-  animation: blink 4s forwards;
+  animation: blinkInf 4s infinite;
   animation-delay: 3s; }
 
 @keyframes blink {
@@ -233,6 +235,16 @@ h2 {
   100% {
     opacity: 1;
     filter: blur(0px); } }
+@keyframes blinkInf {
+  0% {
+    opacity: 0;
+    filter: blur(6px); }
+  50% {
+    opacity: 1;
+    filter: blur(0px); }
+  100% {
+    opacity: 0;
+    filter: blur(6px); } }
 .hero .social {
   position: absolute;
   display: flex;
@@ -474,6 +486,11 @@ form a::after {
   position: absolute;
   background: url(../images/ic-keyboard-arrow-right-48px.png) center center no-repeat; }
 
+footer ul {
+  font-size: 22px; }
+  footer ul > li {
+    font-size: 14px; }
+
 @media (max-width: 480px) {
   .col-2 {
     margin-top: 40px; } }
@@ -504,7 +521,7 @@ form a::after {
 .btn-up {
   position: fixed;
   background-color: #FFC178;
-  right: 20px;
+  right: 3%;
   bottom: 0;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
