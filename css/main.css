@@ -113,9 +113,8 @@ header {
   display: flex;
   margin-right: 50px;
   transition: color .2s linear; }
-  @media (max-width: 480px) {
-    .menu__item {
-      margin-right: 0px; } }
+  .menu__item:last-child {
+    margin-right: 0px; }
 
 .menu__item:hover {
   color: #FFC178;
@@ -209,14 +208,6 @@ h2 {
     .search input::placeholder {
       color: #fff;
       font-size: 16px; }
-  .search::before {
-    content: "";
-    background: url(../images/cart.png);
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px; }
   @media (max-width: 480px) {
     .search {
       display: none; } }
@@ -225,8 +216,8 @@ h2 {
 
 #scrollButton {
   opacity: 0;
-  animation: blinkInf 4s infinite;
-  animation-delay: 3s; }
+  animation: blinkInfinite 4s infinite;
+  animation-delay: 3.4s; }
 
 @keyframes blink {
   0% {
@@ -235,7 +226,7 @@ h2 {
   100% {
     opacity: 1;
     filter: blur(0px); } }
-@keyframes blinkInf {
+@keyframes blinkInfinite {
   0% {
     opacity: 0;
     filter: blur(6px); }
@@ -399,7 +390,7 @@ h2 {
   text-shadow: 1px 1px black; }
 
 .footer {
-  margin-bottom: 60px; }
+  padding-bottom: 20px; }
 
 .row-1 {
   display: flex;
@@ -492,8 +483,9 @@ footer ul {
     font-size: 14px; }
 
 @media (max-width: 480px) {
-  .col-2 {
-    margin-top: 40px; } }
+  .col-2, .col-3, .col-4 {
+    margin-top: 40px;
+    text-align: center; } }
 
 .row-3 {
   display: flex;
@@ -547,6 +539,7 @@ footer ul {
 
 .btn-up_hide {
   opacity: 0;
+  cursor: default;
   filter: blur(4px); }
 
 @media (hover: hover) and (pointer: fine) {

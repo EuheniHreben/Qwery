@@ -49,8 +49,7 @@ header {
   display: flex;
   margin-right: 50px;
   transition: color .2s linear;
-
-  @include phones() {
+  &:last-child {
     margin-right: 0px;
   }
 }
@@ -165,15 +164,6 @@ h2 {
       font-size: 16px;
     }
   }
-  &::before {
-    content: "";
-    background: url(../images/cart.png);
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-  }
   
   @include phones {
     display: none;
@@ -185,8 +175,8 @@ h2 {
 
 #scrollButton {
   opacity: 0;
-  animation: blinkInf 4s infinite;
-  animation-delay: 3s;
+  animation: blinkInfinite 4s infinite;
+  animation-delay: 3.4s;
 }
 
 @keyframes blink {
@@ -201,7 +191,7 @@ h2 {
   }
 }
 
-@keyframes blinkInf {
+@keyframes blinkInfinite {
   0% {
     opacity: 0;
     filter: blur(6px);

@@ -1,5 +1,5 @@
 .footer {
-  margin-bottom: 60px;
+  padding-bottom: 20px;
 }
 
 .row-1 {
@@ -110,9 +110,10 @@ footer ul {
   }
 }
 
-.col-2 {
+.col-2, .col-3, .col-4 {
   @include phones {
     margin-top: 40px;
+    text-align: center;
   }
 }
 
