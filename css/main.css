@@ -117,10 +117,10 @@ header {
   .menu__item:last-child {
     margin-right: 0px; }
 
-.menu__item:hover {
-  color: #FFC178;
-  text-decoration: underline; }
-
+@media (any-hover: hover) {
+  .menu__item:hover {
+    color: #FFC178;
+    text-decoration: underline; } }
 h1 {
   font-size: 96px;
   font-weight: 700;
@@ -306,9 +306,9 @@ h2 {
   height: 16px;
   background: url(../images/arrow_downward_24px.png); }
 
-.button_type_first:hover {
-  text-decoration: underline; }
-
+@media (any-hover: hover) {
+  .button_type_first:hover {
+    text-decoration: underline; } }
 .button_type_second {
   padding: 14px 40px;
   background: #FFC178;
@@ -526,9 +526,7 @@ footer ul {
   height: 50px;
   opacity: 1;
   filter: blur(0px);
-  transition: box-shadow .4s linear;
-  transition: opacity .4s linear;
-  transition: filter(blur) 0.8s linear; }
+  transition: all .4s linear; }
 
 .btn-up::before {
   content: "";
@@ -543,7 +541,7 @@ footer ul {
   cursor: default;
   filter: blur(4px); }
 
-@media (hover: hover) and (pointer: fine) {
+@media (any-hover: hover) {
   .btn-up:hover {
     box-shadow: 0 0 20px 0 #FFC178; } }
 

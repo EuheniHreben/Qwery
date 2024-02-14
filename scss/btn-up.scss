@@ -13,9 +13,7 @@
   height: 50px;
   opacity: 1;
   filter: blur(0px);
-  transition: box-shadow .4s linear;
-  transition: opacity .4s linear;
-  transition: filter(blur) .8s linear;
+  transition: all .4s linear;
 }
 
 .btn-up::before {
@@ -33,7 +31,7 @@
   filter: blur(4px);
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (any-hover: hover) {
   .btn-up:hover {
     box-shadow: 0 0 20px 0 $yellow;
   }

@@ -58,8 +58,10 @@
   background: url(../images/arrow_downward_24px.png);
 }
 
-.button_type_first:hover {
-  text-decoration: underline;
+@media (any-hover: hover) {
+  .button_type_first:hover {
+    text-decoration: underline;
+  }
 }
 
 .button_type_second {

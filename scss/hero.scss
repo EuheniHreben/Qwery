@@ -55,9 +55,11 @@ header {
   }
 }
 
-.menu__item:hover {
-  color: $yellow;
-  text-decoration: underline;
+@media (any-hover: hover) {
+  .menu__item:hover {
+    color: $yellow;
+    text-decoration: underline;
+  }
 }
 
 h1 {
