@@ -43,36 +43,3 @@
   margin-bottom: 28px;
   text-shadow: 1px 1px black;
 }
-
-.button {
-  display: inline-block;
-  color: $yellow;
-}
-
-.button_type_first::after {
-  content: "";
-  display: inline-block;
-  margin-left: 10px;
-  width: 24px;
-  height: 16px;
-  background: url(../images/arrow_downward_24px.png);
-}
-
-@media (any-hover: hover) {
-  .button_type_first:hover {
-    text-decoration: underline;
-  }
-}
-
-.button_type_second {
-  padding: 14px 40px;
-  background: $yellow;
-  color: #000;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: box-shadow .2s linear;
-}
-
-.button_type_second:hover {
-  box-shadow: 0 0 20px 0 $yellow;
-}
