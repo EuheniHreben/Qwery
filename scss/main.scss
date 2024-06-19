@@ -1,107 +1,30 @@
-body,
-html {
-  height: 100%;
-  width: 100%;
-  color: #fff;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  background: #000;
-  scroll-behavior: smooth;
-}
-
 //variables
 $yellow: #FFC178;
 $containerWidth: 1920px;
 $phones: 480px;
+$baseFontSize: 16px;
 
 //adaptive
+@function rem($px) {
+  @return $px / $baseFontSize + 0rem;
+}
+
 @mixin phones {
   @media (max-width: $phones) {
     @content;
   }
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.container {
-  width: 80%;
-  max-width: $containerWidth;
-  margin: 0 auto;
-
-  @include phones() {
-    width: 95%;
-  }
-}
-
-ul>li {
-  list-style: none;
-  color: inherit;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-.thumbnail {
-  width: 90%;
-  @include phones() {
-    height: 140vh;
-    width: 220%;
-    max-width: 220%;
-  }
-}
-
-.thumbnail img {
-  @include phones() {
-    max-width: 180%;
-  }
-}
-
-.swiper {
-  max-width: 1200px;
-  height: 100vh;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    background-color: rgba(255, 193, 120, 0.5);
-    right: 10px;
-    padding: 30px;
-    color: white;
-}
-
+// import
+@import 'layout.scss';
 @import 'hero.scss';
+@import 'parallax.scss';
+@import 'menu.scss';
+@import 'search.scss';
 @import 'section-1.scss';
 @import 'section-2.scss';
 @import 'section-3.scss';
 @import 'footer.scss';
 @import 'btn-up.scss';
 @import 'button.scss';
+@import 'swiper.scss';
