@@ -259,7 +259,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15.625rem;
-  padding-top: 6.25rem; }
+  padding-top: 3.75rem; }
   @media (max-width: 480px) {
     .section-1 .container {
       flex-direction: column;
@@ -339,7 +339,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15.625rem;
-  padding-top: 6.25rem; }
+  padding-top: 3.75rem; }
   @media (max-width: 480px) {
     .section-3 .container {
       flex-direction: column;
