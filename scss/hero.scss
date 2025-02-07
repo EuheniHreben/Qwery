@@ -36,18 +36,18 @@ header {
 }
 
 h1 {
-  font-size: rem(96px);
+  font-size: calc(50px + 46 * (100vw / 1280));
   font-weight: 700;
   opacity: 0;
   animation: blink 2s forwards;
-
+  
   @include phones {
     font-size: rem(60px);
   }
 }
 
 h2 {
-  font-size: rem(64px);
+  font-size: calc(20px + 46 * (100vw / 1280));
 }
 
 .title {

@@ -1,7 +1,7 @@
 .parallax {
   width: 90%;
   @include phones() {
-    height: 100vh;
+    height: 200vh;
     width: 280%;
     max-width: 280%;
   }

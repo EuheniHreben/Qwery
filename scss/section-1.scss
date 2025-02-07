@@ -30,7 +30,7 @@
 }
 
 .main-title {
-  font-size: rem(64px);
+  font-size: calc(30px + 36 * (100vw / 1280));
   font-weight: bold;
   margin-bottom: 28px;
   @include phones() {
