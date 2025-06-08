@@ -1,3 +1,13 @@
+.swiper,
+.swiper-slide {
+  height: 700px; 
+  position: relative;
+  
+  @include phones {
+    height: 600px; 
+  }
+}
+
 .slider-container {
   margin-bottom: 150px;
   @include phones {
@@ -6,6 +16,7 @@
 }
 
 .slider__img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -27,6 +38,10 @@
   justify-content: center;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+    @include phones {
+    padding: 10px;
+  }
 }
 
 .slider__text {
@@ -34,6 +49,6 @@
   margin-bottom: 40px;
   text-shadow: 1px 1px black;
   @include phones {
-    max-width: 60%;
+    max-width: 70%;
   }
 }
