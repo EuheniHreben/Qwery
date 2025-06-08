@@ -82,9 +82,10 @@ h2 {
   }
 }
 
-.suptitle {
+.title__suptitle {
   color: $yellow;
   text-transform: uppercase;
+  white-space: nowrap;
   @include phones {
     font-size: 16px;
   }
@@ -92,6 +93,7 @@ h2 {
 
 .title__button {
   text-align: center;
+  font-size: 20px;
 }
 
 #scrollButton {

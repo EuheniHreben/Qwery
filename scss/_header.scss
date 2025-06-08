@@ -3,7 +3,6 @@
   margin-bottom: 120px;
 
   @include phones() {
-    padding-top: 20px;
     margin-bottom: 60px;
   }
 }
