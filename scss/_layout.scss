@@ -11,6 +11,7 @@ html {
   height: 100%;
   width: 100%;
   color: #fff;
+  text-shadow: 1px 1px 4px #000;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   background: #000;
   scroll-behavior: smooth;
@@ -72,4 +73,5 @@ img {
   margin-right: 10px;
   margin-left: 10px;
   background: $yellow;
+  box-shadow: 2px 2px 5px #000;
 }

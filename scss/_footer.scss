@@ -89,6 +89,9 @@ form input {
   border-top: transparent;
   border-left: transparent;
   border-right: transparent;
+  @include phones {
+      width: 60%;
+  }
 }
 
 form a {

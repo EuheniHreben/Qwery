@@ -1,15 +1,7 @@
 .button {
   display: inline-block;
   color: $yellow;
-}
-
-.button_type_first::after {
-  content: "";
-  display: inline-flex;
-  margin-left: 10px;
-  width: 24px;
-  height: 16px;
-  background: url(../images/arrow_downward_24px.png);
+  text-shadow: 0px 0px 0px #fff;
 }
 
 .button_type_second {

@@ -63,17 +63,6 @@ h2 {
   }
 }
 
-.title__button::after {
-  content: "";
-  display: inline-block;
-  margin-left: 10px;
-  width: 24px;
-  height: 16px;
-  background: url(../images/arrow_downward_24px.png);
-  transform: rotate(90deg);
-  filter: brightness(100);
-}
-
 .title__container a {
   transform: translateX(-100px);
 
@@ -84,6 +73,7 @@ h2 {
 
 .title__suptitle {
   color: $yellow;
+  text-shadow: 1px 1px 2px #000;
   text-transform: uppercase;
   white-space: nowrap;
   @include phones {

@@ -5,7 +5,7 @@
   margin-bottom: 150px;
   padding-top: 60px;
   gap: 80px;
-  
+
   @include phones {
     gap: 10px;
     flex-direction: column;
@@ -32,7 +32,7 @@
 }
 
 .holiday__suptitle {
-  color: #FFC178;
+  color: #ffc178;
 }
 
 .holiday__main-title {
@@ -47,5 +47,6 @@
 
 .holiday__text {
   margin-bottom: 28px;
+  line-height: 1.6;
   text-shadow: 1px 1px black;
 }
