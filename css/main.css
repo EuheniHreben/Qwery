@@ -6,12 +6,12 @@ body {
 
 body,
 html {
-  height: 100%;
   width: 100%;
   color: #fff;
   text-shadow: 1px 1px 4px #000;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   background: #000;
+  overflow-x: hidden;
   scroll-behavior: smooth; }
 
 * {
@@ -91,7 +91,7 @@ img {
 
 @media (hover: hover) and (pointer: fine) {
   .logo:hover {
-    text-shadow: #fc0 1px 0 10px; } }
+    text-shadow: #FFC178 1px 0 10px; } }
 .hero {
   margin-bottom: 400px; }
   @media (max-width: 700px) {
@@ -104,13 +104,14 @@ img {
   justify-content: center; }
 
 h1 {
-  font-size: calc(50px + 46 * (100vw / 1280));
+  font-size: 96px;
   font-weight: 700;
   opacity: 0;
+  color: #75754f;
   animation: blink 2s forwards; }
   @media (max-width: 700px) {
     h1 {
-      font-size: 60px; } }
+      font-size: 80px; } }
 
 h2 {
   font-size: calc(20px + 46 * (100vw / 1280)); }
@@ -128,6 +129,9 @@ h2 {
   width: 90%;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 700px) {
+    .title__container {
+      width: 100%; } }
 
 .title__main-title {
   animation: blinkInfinite 10s infinite;
@@ -136,7 +140,7 @@ h2 {
 .title__title {
   font-size: 88px;
   font-weight: 100;
-  margin-bottom: 125px;
+  margin-bottom: 140px;
   opacity: 0;
   animation: blink 2s forwards;
   animation-delay: 2s; }
@@ -162,7 +166,7 @@ h2 {
 
 .title__button {
   text-align: center;
-  font-size: 20px; }
+  font-size: 24px; }
   @media (max-width: 700px) {
     .title__button {
       margin-bottom: 60px; } }
@@ -194,11 +198,15 @@ h2 {
   display: flex;
   left: 0;
   top: 50%;
-  transform: rotate(90deg); }
+  transform: rotate(90deg);
+  transition: text-shadow 0.2s ease-out; }
   @media (max-width: 700px) {
     .hero .social {
       display: none; } }
 
+@media (hover: hover) and (pointer: fine) {
+  .social a:hover {
+    text-shadow: #FFC178 1px 0 10px; } }
 .hero .social__text {
   margin-right: 20px; }
 
@@ -242,7 +250,8 @@ h2 {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
   .search input {
     margin-left: 4px;
     font-size: 18px;
@@ -258,7 +267,12 @@ h2 {
     .search {
       display: none; } }
   .search input {
-    width: 120px; }
+    width: 150px;
+    padding-right: 40px; }
+
+.search i {
+  position: absolute;
+  right: 10px; }
 
 .holiday-container {
   display: flex;
@@ -273,18 +287,27 @@ h2 {
       margin-bottom: 100px; } }
 
 .holiday__img-box {
-  flex: 0 1 45%; }
+  flex: 0 1 45%;
+  transform: translateX(-5%); }
 
 .holiday__img-box img {
   width: 100%;
   height: auto; }
 
 .holiday__desc {
-  flex: 0 1 45%; }
+  flex: 0 1 45%;
+  transform: translateX(5%); }
   @media (max-width: 700px) {
     .holiday__desc {
       width: 100%;
       margin-top: 20px; } }
+
+.side-item {
+  transition: transform 0.4s ease-out; }
+
+.visible {
+  transform: translateX(0);
+  opacity: 1; }
 
 .holiday__suptitle {
   color: #ffc178; }
@@ -334,7 +357,11 @@ h2 {
   padding: 20px 10px; }
 
 .slider__title {
-  margin-bottom: 40px; }
+  font-size: 60px;
+  margin-bottom: 10px; }
+  @media (max-width: 700px) {
+    .slider__title {
+      font-size: 40px; } }
 
 .slider__text {
   max-width: 80%;
@@ -345,7 +372,8 @@ h2 {
   @media (max-width: 700px) {
     .slider__text {
       line-height: 1.4;
-      max-width: 70%; } }
+      max-width: 70%;
+      font-size: 14px; } }
 
 .culture-container {
   display: flex;
@@ -369,17 +397,26 @@ h2 {
       font-size: 24px; } }
 
 .culture__desc {
-  flex: 0 1 45%; }
+  flex: 0 1 45%;
+  transform: translateX(-5%); }
   @media (max-width: 700px) {
     .culture__desc {
       width: 100%;
       margin-bottom: 20px; } }
 
 .culture__img-box {
-  flex: 0 1 45%; }
+  flex: 0 1 45%;
+  transform: translateX(5%); }
   @media (max-width: 700px) {
     .culture__img-box {
       width: 100%; } }
+
+.side-item {
+  transition: transform 0.4s ease-out; }
+
+.visible {
+  transform: translateX(0);
+  opacity: 1; }
 
 .culture__img-box img {
   width: 100%;
@@ -408,8 +445,7 @@ h2 {
   left: 0;
   bottom: -50px;
   height: 1px;
-  background: #979797;
-  opacity: 0.4; }
+  background: #979797; }
 
 .row-1 .logo {
   flex: 1; }
@@ -563,7 +599,7 @@ footer ul {
   color: #000;
   font-weight: bold;
   border-radius: 8px;
-  transition: box-shadow 0.2s linear; }
+  transition: box-shadow 0.2s ease-in; }
 
 @media (hover: hover) and (pointer: fine) {
   .button_type_second:hover {
@@ -582,7 +618,7 @@ footer ul {
 
 .swiper-button-next,
 .swiper-button-prev {
-  background-color: rgba(255, 193, 120, 0.3);
+  background-color: rgba(255, 193, 120, 0.6);
   right: 10px;
   padding: 30px;
   color: white; }

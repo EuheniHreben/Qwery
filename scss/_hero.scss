@@ -13,13 +13,14 @@
 }
 
 h1 {
-  font-size: calc(50px + 46 * (100vw / 1280));
+  font-size: 96px;
   font-weight: 700;
   opacity: 0;
+  color: #75754f;
   animation: blink 2s forwards;
 
   @include phones {
-    font-size: 60px;
+    font-size: 80px;
   }
 }
 
@@ -42,6 +43,9 @@ h2 {
   width: 90%;
   display: flex;
   flex-direction: column;
+  @include phones() {
+    width: 100%;
+  }
 }
 
 .title__main-title {
@@ -52,7 +56,7 @@ h2 {
 .title__title {
   font-size: 88px;
   font-weight: 100;
-  margin-bottom: 125px;
+  margin-bottom: 140px;
   opacity: 0;
   animation: blink 2s forwards;
   animation-delay: 2s;
@@ -83,7 +87,7 @@ h2 {
 
 .title__button {
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
 
   @include phones() {
     margin-bottom: 60px;
@@ -131,9 +135,16 @@ h2 {
   left: 0;
   top: 50%;
   transform: rotate(90deg);
+  transition: text-shadow 0.2s ease-out;
 
   @include phones() {
     display: none;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .social a:hover {
+    text-shadow: $yellow 1px 0 10px;
   }
 }
 

@@ -8,12 +8,12 @@ body {
 
 body,
 html {
-  height: 100%;
   width: 100%;
   color: #fff;
   text-shadow: 1px 1px 4px #000;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   background: #000;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 

@@ -21,7 +21,6 @@
   bottom: -50px;
   height: 1px;
   background: #979797;
-  opacity: 0.4;
 }
 
 .row-1 .logo {
@@ -90,7 +89,7 @@ form input {
   border-left: transparent;
   border-right: transparent;
   @include phones {
-      width: 60%;
+    width: 60%;
   }
 }
 

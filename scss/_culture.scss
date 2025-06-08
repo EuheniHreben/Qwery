@@ -25,6 +25,7 @@
 
 .culture__desc {
   flex: 0 1 45%;
+  transform: translateX(-5%);
 
   @include phones {
     width: 100%;
@@ -34,10 +35,20 @@
 
 .culture__img-box {
   flex: 0 1 45%;
+  transform: translateX(5%);
 
   @include phones {
     width: 100%;
   }
+}
+
+.side-item {
+  transition: transform 0.4s ease-out;
+}
+
+.visible {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .culture__img-box img {
