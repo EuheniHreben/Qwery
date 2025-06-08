@@ -59,7 +59,7 @@ h2 {
 
   @include phones() {
     font-size: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
 }
 
@@ -84,6 +84,10 @@ h2 {
 .title__button {
   text-align: center;
   font-size: 20px;
+
+  @include phones() {
+    margin-bottom: 80px;
+  }
 }
 
 #scrollButton {
