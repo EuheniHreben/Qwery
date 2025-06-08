@@ -110,7 +110,7 @@ h1 {
   animation: blink 2s forwards; }
   @media (max-width: 700px) {
     h1 {
-      font-size: 2.5rem; } }
+      font-size: 60px; } }
 
 h2 {
   font-size: calc(20px + 46 * (100vw / 1280)); }
@@ -143,7 +143,7 @@ h2 {
   @media (max-width: 700px) {
     .title__title {
       font-size: 60px;
-      margin-bottom: 40px; } }
+      margin-bottom: 60px; } }
 
 .title__container a {
   transform: translateX(-100px); }
@@ -269,7 +269,7 @@ h2 {
     .holiday-container {
       gap: 10px;
       flex-direction: column;
-      margin-bottom: 60px; } }
+      margin-bottom: 100px; } }
 
 .holiday__img-box {
   flex: 0 1 45%; }
@@ -305,7 +305,7 @@ h2 {
   margin-bottom: 150px; }
   @media (max-width: 700px) {
     .slider-container {
-      margin-bottom: 40px; } }
+      margin-bottom: 100px; } }
 
 .slider__img {
   display: block;
@@ -329,10 +329,8 @@ h2 {
   justify-content: center;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
-  overflow: hidden; }
-  @media (max-width: 700px) {
-    .slider__content {
-      padding: 10px; } }
+  overflow: hidden;
+  padding: 10px; }
 
 .slider__title {
   margin-bottom: 40px; }
@@ -345,6 +343,7 @@ h2 {
   text-shadow: 1px 1px black; }
   @media (max-width: 700px) {
     .slider__text {
+      line-height: 1.4;
       max-width: 70%; } }
 
 .culture-container {
