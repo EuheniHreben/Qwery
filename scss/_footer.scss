@@ -21,7 +21,7 @@
   bottom: -50px;
   height: 1px;
   background: #979797;
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .row-1 .logo {
@@ -40,10 +40,10 @@
   margin-bottom: 100px;
 
   @include phones {
-    margin-right: 0px;
     flex-direction: column;
     justify-content: center;
     margin-right: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -51,9 +51,12 @@
   color: $yellow;
   font-weight: bold;
   padding-top: 20px;
+  @include phones {
+    display: none;
+  }
 }
 
-ul>li {
+ul > li {
   color: #fff;
   font-weight: normal;
   line-height: 35px;
@@ -100,17 +103,20 @@ form a::after {
   left: 0;
   right: 0;
   position: absolute;
-  background: url(../images/ic-keyboard-arrow-right-48px.png) center center no-repeat;
+  background: url(../images/ic-keyboard-arrow-right-48px.png) center center
+    no-repeat;
 }
 
 footer ul {
   font-size: 22px;
-  &>li {
+  & > li {
     font-size: 14px;
   }
 }
 
-.col-2, .col-3, .col-4 {
+.col-2,
+.col-3,
+.col-4 {
   @include phones {
     margin-top: 40px;
     text-align: center;
