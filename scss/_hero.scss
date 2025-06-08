@@ -1,38 +1,15 @@
 .hero {
   margin-bottom: 400px;
+
+  @include phones {
+    margin-bottom: 40px;
+  }
 }
 
-.hero .container {
+.hero-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-header {
-  display: flex;
-  padding-top: 40px;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 180px;
-  position: relative;
-
-  @include phones() {
-    margin-bottom: 80px;
-    flex-direction: column;
-  }
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 700;
-  text-shadow: #FC0 1px 0 10px;
-  transition: text-shadow .4s linear;
-  cursor: pointer;
-
-  @include phones {
-    font-size: 44px;
-    margin-bottom: 20px;
-  }
 }
 
 h1 {
@@ -40,9 +17,9 @@ h1 {
   font-weight: 700;
   opacity: 0;
   animation: blink 2s forwards;
-  
+
   @include phones {
-    font-size: rem(60px);
+    font-size: rem(40px);
   }
 }
 
@@ -67,6 +44,11 @@ h2 {
   flex-direction: column;
 }
 
+.title__main-title {
+  animation: blinkInfinite 10s infinite;
+  text-align: center;
+}
+
 .title__title {
   font-size: 88px;
   font-weight: 100;
@@ -75,10 +57,9 @@ h2 {
   animation: blink 2s forwards;
   animation-delay: 2s;
 
-
   @include phones() {
     font-size: 60px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 }
 
@@ -107,22 +88,6 @@ h2 {
   @include phones {
     font-size: 16px;
   }
-}
-
-.title__suptitle::before,
-.section-1__suptitle::before,
-.section-2__suptitle::before,
-.section-2__suptitle::after,
-.section-3__suptitle::before {
-  content: "";
-  display: inline-block;
-  width: 40px;
-  height: 2px;
-  border-radius: 50px;
-  transform: translateY(-6px);
-  margin-right: 10px;
-  margin-left: 10px;
-  background: $yellow;
 }
 
 .title__button {

@@ -1,211 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"
+      integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>QWERy</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js" integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.css">
-  <title>QWERy</title>
-</head>
-
-<body>
-
-  <img class="parallax" src="images/Background.png" alt="image">
-  <div class="wrapper">
-    
-    <section class="hero" id="hero">
-      <div class="container">
-        <header class="header">
+  <body>
+    <img class="parallax" src="../images/Background.jpg" alt="parallax" />
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header-container">
           <a href="index.html" class="logo">QWERy</a>
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__item"><a href="#section-1" class="menu__link">Information</a></li>
-              <li class="menu__item"><a href="#section-2" class="menu__link">About Us</a></li>
-              <li class="menu__item"><a href="#section-3" class="menu__link">Culture</a></li>
+              <li class="menu__item">
+                <a href="#holiday" class="menu__link">Information</a>
+              </li>
+              <li class="menu__item">
+                <a href="#slider" class="menu__link">About Us</a>
+              </li>
+              <li class="menu__item">
+                <a href="#culture" class="menu__link">Culture</a>
+              </li>
             </ul>
           </nav>
           <div class="search">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search..." id="search">
-          </div>
-        </header>
-        <div class="title">
-          <div class="title__container">
-            <div class="title__suptitle suptitle">explore the nature beauty</div>
-            <h1>Discover</h1>
-            <div class="title__title">Wonderful Indonesia</div>
-            <a href="#section-1" class="title__button" id="scrollButton">Scroll down</a>
+            <input type="text" placeholder="Search..." id="search" />
           </div>
         </div>
-        <div class="social">
-          <div class="social__text">Follow us</div>
-          <a href="https://www.instagram.com/" class="social__link">
-            <i class="fa-brands fa-instagram fa-lg social__img"></i>
-          </a>
-          <a href="https://twitter.com/" class="social__link">
-            <i class="fa-brands fa-twitter fa-lg social__img"></i>
-          </a>
-          <a href="https://www.facebook.com/" class="social__link">
-            <i class="fa-brands fa-facebook fa-lg social__img"></i>
-          </a>
-        </div>
-      </div>
-    </section>
+      </header>
 
-    <main>
-
-      <section class="section-1" id="section-1">
-        <div class="container">
-          <div class="section-1__img-box">
-            <img src="images/image 1.png" alt="" class="section-1__img">
-          </div>
-          <div class="section-1__desc">
-            <div class="section-1__suptitle suptitle">EAST NUSA TENGGARA</div>
-            <h2 class="section-1__main-title main-title">Have you enjoyed your holiday?</h2>
-            <div class="section-1__text">You will be amazed if you take part in this sailing Komodo island tour package.
-              So it is also mandatory for you, besides enjoying Komodo tourism on Komodo Island, you also have to taste
-              the marine tourism. The beautiful waters of Komodo will make you meet many travelers from other countries.
-            </div>
-            <a href="#section-2" class="section-1__button button button_type_first">read more</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-2" id="section-2">
-        <div class="container">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide section-2__bg section-2__bg--first">
-                <div class="section-2__content">
-                  <div class="section-2__suptitle suptitle">BROMO</div>
-                  <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
-                  <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor
-                    of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or
-                    otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting
-                    Bromo.</div>
-                  <a href="#section-3" class="section-2__button button button_type_second">read more</a>
+      <main>
+        <section class="hero" id="hero">
+          <div class="container hero-container">
+            <div class="title">
+              <div class="title__container">
+                <div class="title__suptitle suptitle">
+                  explore the nature beauty
                 </div>
-              </div>
-              <div class="swiper-slide section-2__bg section-2__bg--second">
-                <div class="section-2__content">
-                  <div class="section-2__suptitle suptitle">BROMO</div>
-                  <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
-                  <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor
-                    of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or
-                    otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting
-                    Bromo.</div>
-                  <a href="#section-3" class="section-2__button button button_type_second">read more</a>
-                </div>
-              </div>
-              <div class="swiper-slide section-2__bg section-2__bg--third">
-                <div class="section-2__content">
-                  <div class="section-2__suptitle suptitle">BROMO</div>
-                  <h2 class="section-2__main-title main-title">Steady your steps, we will climb together!</h2>
-                  <div class="section-2__text">Enjoying the vast expanse of the sea of ​​​​sand, witnessing the splendor
-                    of Mount Semeru that soars into the sky, and gazing at the beauty of the sun moving out of its bed or
-                    otherwise enjoying the dim twilight from the Bromo ridge is an unforgettable experience when visiting
-                    Bromo.</div>
-                  <a href="#section-3" class="section-2__button button button_type_second">read more</a>
-                </div>
+                <h1>Discover</h1>
+                <div class="title__title">Wonderful Indonesia</div>
+                <a href="#holiday" class="title__button" id="scrollButton"
+                  >Scroll down</a
+                >
               </div>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="social">
+              <div class="social__text">Follow us</div>
+              <a href="https://www.instagram.com/" class="social__link">
+                <i class="fa-brands fa-instagram fa-lg social__img"></i>
+              </a>
+              <a href="https://twitter.com/" class="social__link">
+                <i class="fa-brands fa-twitter fa-lg social__img"></i>
+              </a>
+              <a href="https://www.facebook.com/" class="social__link">
+                <i class="fa-brands fa-facebook fa-lg social__img"></i>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section-3" id="section-3">
+        <section class="holiday" id="holiday">
+          <div class="container holiday-container">
+            <div class="holiday__img-box">
+              <img src="images/image1.jpg" alt="img" class="holiday__img" />
+            </div>
+            <div class="holiday__desc">
+              <div class="holiday__suptitle suptitle">EAST NUSA TENGGARA</div>
+              <h2 class="holiday__main-title main-title">
+                Have you enjoyed your holiday?
+              </h2>
+              <div class="holiday__text">
+                You will be amazed if you take part in this sailing Komodo
+                island tour package. So it is also mandatory for you, besides
+                enjoying Komodo tourism on Komodo Island, you also have to taste
+                the marine tourism. The beautiful waters of Komodo will make you
+                meet many travelers from other countries.
+              </div>
+              <a href="#slider" class="button button_type_first">read more</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="slider" id="slider">
+          <div class="container slider-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="images/slider1.jpg"
+                    alt="slide"
+                    class="slider__img"
+                  />
+                  <div class="slider__content">
+                    <div class="slider__suptitle suptitle">BROMO</div>
+                    <h2 class="slider__title main-title">
+                      Steady your steps, we will climb together!
+                    </h2>
+                    <div class="slider__text">
+                      Enjoying the vast expanse of the sea of ​​​​sand,
+                      witnessing the splendor of Mount Semeru that soars into
+                      the sky, and gazing at the beauty of the sun moving out of
+                      its bed or otherwise enjoying the dim twilight from the
+                      Bromo ridge is an unforgettable experience when visiting
+                      Bromo.
+                    </div>
+                    <a href="#culture" class="button button_type_second"
+                      >read more</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/slider2.jpg"
+                    alt="slide"
+                    class="slider__img"
+                  />
+                  <div class="slider__content">
+                    <div class="slider__suptitle suptitle">BROMO</div>
+                    <h2 class="slider__title main-title">
+                      Steady your steps, we will climb together!
+                    </h2>
+                    <div class="slider__text">
+                      Enjoying the vast expanse of the sea of ​​​​sand,
+                      witnessing the splendor of Mount Semeru that soars into
+                      the sky, and gazing at the beauty of the sun moving out of
+                      its bed or otherwise enjoying the dim twilight from the
+                      Bromo ridge is an unforgettable experience when visiting
+                      Bromo.
+                    </div>
+                    <a href="#section-3" class="button button_type_second"
+                      >read more</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/slider3.jpg"
+                    alt="slide"
+                    class="slider__img"
+                  />
+                  <div class="slider__content">
+                    <div class="slider__suptitle suptitle">BROMO</div>
+                    <h2 class="slider__title main-title">
+                      Steady your steps, we will climb together!
+                    </h2>
+                    <div class="slider__text">
+                      Enjoying the vast expanse of the sea of ​​​​sand,
+                      witnessing the splendor of Mount Semeru that soars into
+                      the sky, and gazing at the beauty of the sun moving out of
+                      its bed or otherwise enjoying the dim twilight from the
+                      Bromo ridge is an unforgettable experience when visiting
+                      Bromo.
+                    </div>
+                    <a href="#section-3" class="button button_type_second"
+                      >read more</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/slider4.jpg"
+                    alt="slide"
+                    class="slider__img"
+                  />
+                  <div class="slider__content">
+                    <div class="slider__suptitle suptitle">BROMO</div>
+                    <h2 class="slider__title main-title">
+                      Steady your steps, we will climb together!
+                    </h2>
+                    <div class="slider__text">
+                      Enjoying the vast expanse of the sea of ​​​​sand,
+                      witnessing the splendor of Mount Semeru that soars into
+                      the sky, and gazing at the beauty of the sun moving out of
+                      its bed or otherwise enjoying the dim twilight from the
+                      Bromo ridge is an unforgettable experience when visiting
+                      Bromo.
+                    </div>
+                    <a href="#section-3" class="button button_type_second"
+                      >read more</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Навигация -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- Пагинация -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="culture" id="culture">
+          <div class="container culture-container">
+            <div class="culture__desc">
+              <div class="culture__suptitle suptitle">INDONESIAN CULTURE</div>
+              <h2 class="culture__main-title main-title">
+                Our culture here is very friendly to people
+              </h2>
+              <div class="culture__text">
+                known for his politeness, manners and gentleness. This becomes a
+                characteristic when they mingle with other tribes and become
+                basic traits that are passed down by their ancestors.
+              </div>
+              <a href="#row-2" class="button button_type_first">read more</a>
+            </div>
+            <div class="culture__img-box">
+              <img src="images/01.png" alt="img" class="culture__img" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
         <div class="container">
-          <div class="section-3__desc">
-            <div class="section-3__suptitle suptitle">INDONESIAN CULTURE</div>
-            <h2 class="section-3__main-title main-title">Our culture here is very friendly to people</h2>
-            <div class="section-3__text">known for his politeness, manners and gentleness. This becomes a characteristic
-              when they mingle with other tribes and become basic traits that are passed down by their ancestors.</div>
-            <a href="#row-2" class="section-3__button button button_type_first">read more</a>
+          <div class="row-1">
+            <div class="logo">QWERy</div>
+            <div class="row-1__text">Ready to explore?</div>
+            <a href="#hero" class="row-1__button button button_type_second"
+              >Get started</a
+            >
           </div>
-          <div class="section-3__img-box">
-            <img src="images/01.png" alt="" class="section-3__img">
+          <div class="row-2" id="row-2">
+            <div class="col-1">
+              <div class="col-1__text">Let's go on vacation, Make your day</div>
+              <form>
+                <input
+                  name="emailInput"
+                  type="email"
+                  placeholder="Email address"
+                  required
+                />
+                <a href="" class="button button_type_second"></a>
+              </form>
+            </div>
+            <div class="col-2">
+              <ul class="col-2__list">
+                Services
+                <li class="col-2__item">
+                  <a href="" class="col-2__link">Email Marketing</a>
+                </li>
+                <li class="col-2__item">
+                  <a href="" class="col-2__link">Campaigns</a>
+                </li>
+                <li class="col-2__item">
+                  <a href="" class="col-2__link">Branding</a>
+                </li>
+                <li class="col-2__item">
+                  <a href="" class="col-2__link">Offline</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul class="col-3__list">
+                About
+                <li class="col-3__item">
+                  <a href="" class="col-2__link">Our Story</a>
+                </li>
+                <li class="col-3__item">
+                  <a href="" class="col-2__link">Benefits</a>
+                </li>
+                <li class="col-3__item">
+                  <a href="" class="col-2__link">Team</a>
+                </li>
+                <li class="col-3__item">
+                  <a href="" class="col-2__link">Careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <ul class="col-4__list">
+                Help
+                <li class="col-4__item">
+                  <a href="" class="col-2__link">FAQs</a>
+                </li>
+                <li class="col-4__item">
+                  <a href="" class="col-2__link">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row-3">
+            <div class="row-3__text">
+              <p>Terms & Conditions</p>
+              <p>Privacy Policy</p>
+            </div>
+            <div class="social">
+              <a href="https://www.instagram.com/" class="social__link">
+                <i class="fa-brands fa-instagram fa-lg social__img"></i>
+              </a>
+              <a href="https://twitter.com/" class="social__link">
+                <i class="fa-brands fa-twitter fa-lg social__img"></i>
+              </a>
+              <a href="https://www.facebook.com/" class="social__link">
+                <i class="fa-brands fa-facebook fa-lg social__img"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </section>
+      </footer>
+    </div>
 
-    </main>
+    <div class="btn-up btn-up_hide"></div>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="row-1">
-          <div class="logo">QWERy</div>
-          <div class="row-1__text">Ready to explore?</div>
-          <a href="#hero" class="row-1__button button button_type_second">Get started</a>
-        </div>
-        <div class="row-2" id="row-2">
-          <div class="col-1">
-            <div class="col-1__text">Let's go on vacation, Make your day</div>
-            <form>
-              <input name="emailInput" type="email" placeholder="Email address" required>
-              <a href="" class="button button_type_second"></a>
-            </form>
-          </div>
-          <div class="col-2">
-            <ul class="col-2__list">Services
-              <li class="col-2__item"><a href="" class="col-2__link">Email Marketing</a></li>
-              <li class="col-2__item"><a href="" class="col-2__link">Campaigns</a></li>
-              <li class="col-2__item"><a href="" class="col-2__link">Branding</a></li>
-              <li class="col-2__item"><a href="" class="col-2__link">Offline</a></li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <ul class="col-3__list">About
-              <li class="col-3__item"><a href="" class="col-2__link">Our Story</a></li>
-              <li class="col-3__item"><a href="" class="col-2__link">Benefits</a></li>
-              <li class="col-3__item"><a href="" class="col-2__link">Team</a></li>
-              <li class="col-3__item"><a href="" class="col-2__link">Careers</a></li>
-            </ul>
-          </div>
-          <div class="col-4">
-            <ul class="col-4__list">Help
-              <li class="col-4__item"><a href="" class="col-2__link">FAQs</a></li>
-              <li class="col-4__item"><a href="" class="col-2__link">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row-3">
-          <div class="row-3__text">
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-          </div>
-          <div class="social">
-            <a href="https://www.instagram.com/" class="social__link">
-              <i class="fa-brands fa-instagram fa-lg social__img"></i>
-            </a>
-            <a href="https://twitter.com/" class="social__link">
-              <i class="fa-brands fa-twitter fa-lg social__img"></i>
-            </a>
-            <a href="https://www.facebook.com/" class="social__link">
-              <i class="fa-brands fa-facebook fa-lg social__img"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-  </div>
-
-  <div class="btn-up btn-up_hide"></div>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
-  <script src="js/simple-parallax.js"></script>
-  <script src="js/btn-up.js"></script>
-  <script src="js/swiper.js"></script>
-  
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
+    <script src="js/simple-parallax.js"></script>
+    <script src="js/btn-up.js"></script>
+    <script src="js/swiper.js"></script>
+  </body>
 </html>

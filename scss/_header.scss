@@ -1,0 +1,35 @@
+.header {
+  padding-top: 40px;
+  margin-bottom: 120px;
+
+  @include phones() {
+    padding-top: 20px;
+    margin-bottom: 60px;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include phones() {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  transition: text-shadow 0.2s ease-out;
+  cursor: pointer;
+  
+  @include phones {
+    margin-bottom: 20px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .logo:hover {
+    text-shadow: #fc0 1px 0 10px;
+  }
+}

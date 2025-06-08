@@ -11,7 +11,7 @@ html {
   height: 100%;
   width: 100%;
   color: #fff;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   background: #000;
   scroll-behavior: smooth;
 }
@@ -35,13 +35,9 @@ html {
   width: 80%;
   max-width: $containerWidth;
   margin: 0 auto;
-
-  @include phones {
-    width: 90%;
-  }
 }
 
-ul>li {
+ul > li {
   list-style: none;
   color: inherit;
 }
@@ -63,4 +59,17 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.suptitle::before,
+.suptitle::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  border-radius: 50px;
+  transform: translateY(-6px);
+  margin-right: 10px;
+  margin-left: 10px;
+  background: $yellow;
 }

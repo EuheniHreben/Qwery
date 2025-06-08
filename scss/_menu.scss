@@ -7,6 +7,7 @@
 .menu__list {
   display: flex;
   justify-content: space-around;
+  gap: 50px;
   @include phones {
     justify-content: space-between;
   }
@@ -14,19 +15,11 @@
 
 .menu__item {
   display: flex;
-  margin-right: 50px;
-  transition: color .2s linear;
-  &:last-child {
-    margin-right: 0px;
-  }
-  @include phones {
-    margin-right: 0px;
-  }
+  transition: color 0.2s linear;
 }
 
-@media (any-hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .menu__item:hover {
     color: $yellow;
-    text-decoration: underline;
   }
 }
