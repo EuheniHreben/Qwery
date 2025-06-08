@@ -59,7 +59,7 @@ h2 {
 
   @include phones() {
     font-size: 60px;
-    margin-bottom: 80px;
+    margin-bottom: 160px;
   }
 }
 
@@ -86,7 +86,7 @@ h2 {
   font-size: 20px;
 
   @include phones() {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 }
 

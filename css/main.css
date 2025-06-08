@@ -143,7 +143,7 @@ h2 {
   @media (max-width: 700px) {
     .title__title {
       font-size: 60px;
-      margin-bottom: 80px; } }
+      margin-bottom: 160px; } }
 
 .title__container a {
   transform: translateX(-100px); }
@@ -165,7 +165,7 @@ h2 {
   font-size: 20px; }
   @media (max-width: 700px) {
     .title__button {
-      margin-bottom: 80px; } }
+      margin-bottom: 60px; } }
 
 #scrollButton {
   opacity: 0;
@@ -265,7 +265,6 @@ h2 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 150px;
-  padding-top: 60px;
   gap: 80px; }
   @media (max-width: 700px) {
     .holiday-container {
@@ -332,7 +331,7 @@ h2 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  padding: 10px; }
+  padding: 20px 10px; }
 
 .slider__title {
   margin-bottom: 40px; }
