@@ -2,10 +2,6 @@
 .swiper-slide {
   height: 700px;
   position: relative;
-
-  @include phones {
-    height: 600px;
-  }
 }
 
 .swiper-button-next,
