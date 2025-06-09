@@ -14,12 +14,12 @@
 }
 
 .culture__main-title {
-  font-size: calc(10px + 46 * (100vw / 1280));
+  font-size: 56px;
   font-weight: bold;
   margin-bottom: 28px;
 
   @include phones {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 
@@ -58,5 +58,6 @@
 
 .culture__text {
   margin-bottom: 28px;
+  line-height: 1.6;
   text-shadow: 1px 1px black;
 }
